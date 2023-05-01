@@ -14,3 +14,4 @@ TIMESTAMPDIFF(DAY, `born`, `died`) AS  "Days Lived" FROM `authors`;
 
 SELECT `title` FROM `books` WHERE `title` LIKE "Harry Potter%";
 
+SELECT `title` FROM `books` WHERE REGEXP_LIKE(`title`, "Harry Potter") = 1;
